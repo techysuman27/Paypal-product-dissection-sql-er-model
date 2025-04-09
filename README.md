@@ -42,17 +42,48 @@ This project explores the inner workings of PayPal by:
 | **Notifications**  | Logs system alerts/messages                   |
 | **DisputeReplies** | Tracks communication in a dispute             |
 
+### 🔄 Relationships & Cardinality (Simplified)
+
+| Relationship                     | Cardinality               |
+|----------------------------------|---------------------------|
+| Users ↔ Profiles                 | 1:1                       |
+| Users ↔ PaymentMethods           | 1:N                       |
+| Users ↔ Transactions             | 1:N (as sender/receiver)  |
+| Transactions ↔ Disputes          | 1:1 or 1:0                |
+| Disputes ↔ DisputeReplies        | 1:N                       |
+| Users ↔ Balances                 | 1:1                       |
+| Users ↔ Notifications            | 1:N                       |
+
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool             | Purpose                            |
-|------------------|------------------------------------|
-| `SQL`            | Schema & relationship design       |
-| `Lucidchart`     | ER diagram creation                |
-| `Python (docx)`  | Optional PDF/Docx reporting        |
+| Tool              | Purpose                            |
+|-------------------|------------------------------------|
+| `SQL`             | Schema & relationship design       |
+| `MySQL Workbench` | ER diagram creation                |
+| `Python (docx)`   | Optional PDF/Docx reporting        |
 
 ---
 
 ## 📁 Folder Structure
+
+📦paypal-product-dissection
+ ┣ 📂images
+ ┃ ┣ 📄paypal_logo.png
+ ┃ ┗ 📄paypal_er_diagram.png
+ ┣ 📄README.md
+ ┣ 📄schema.sql
+ ┗ 📄paypal_case_study.pdf
+```
+
+---
+
+## 🌐 License
+
+This project is licensed under the **MIT License** © 2025 [Suman Sadhukhan](#).  
+You’re free to use, modify, and share it with proper attribution.
+
+---
+
 
