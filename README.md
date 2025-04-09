@@ -64,20 +64,18 @@ This project explores the inner workings of PayPal by:
 | `MySQL Workbench` | ER diagram creation                |
 | `Python (docx)`   | Optional PDF/Docx reporting        |
 
----
-
-## 📁 Folder Structure
-
+```
 📦paypal-product-dissection
  ┣ 📂images
  ┃ ┣ 📄paypal_logo.png
  ┃ ┗ 📄paypal_er_diagram.png
- ┣ 📄README.md
- ┣ 📄schema.sql
- ┗ 📄paypal_case_study.pdf
+ ┣ 📂assets
+ ┃ ┣ 📄schema.sql
+ ┃ ┗ 📄paypal_case_study.pdf
+ ┗ 📄README.md
+
 ```
 
----
 
 ## 🌐 License
 
